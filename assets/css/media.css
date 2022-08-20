@@ -1,0 +1,717 @@
+
+@media(max-width:991px){
+  
+    nav .nav-list .list{
+       
+        position: absolute;
+        background-color: #333;
+        top: 100%;
+        left: 5%;
+        width: 90%;
+        padding-top:28px ;
+        padding-bottom: 28px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav .nav-list .list{
+display: unset;/*Eliminate the presence of items next to each other,remove flex*/
+/*unset:تعمل على ارجاع العنصر للحالة الي كان عليها قبل ما اعمله ستايل فهون الغت خاصية الفليكس الي كانت تخلي العناصر يكونوا جنب بعض*/
+    }
+    
+nav .nav-list .list .list-item:nth-child(4):after{
+    display: none;/*to remove hot*/
+}
+nav .nav-list .list .list-item .nav-link{
+    color:#fff;/*color of nav-link is white*/
+
+}
+nav .nav-list .list .list-item{
+    margin-bottom: 20px;
+    margin-right: 0px;
+}
+nav .nav-list .list .list-item .dropdown{
+    background-color: unset;
+    border: 0;
+    border-radius: 0;
+    position: unset;
+    display: none;
+}
+nav .nav-list .list .list-item:hover .dropdown{
+    display: block;
+}
+nav .nav-list .list .list-item .dropdown:before{
+    display: none;
+}
+
+nav .nav-list .list .list-item .dropdown .dropdown-list .dropdown-link{
+    color: #fff;
+}
+.checkedlabel{
+    display: block;
+    order:1;
+    
+}
+nav #check:checked + .nav-list .list{
+    opacity: 1;
+    visibility: visible;
+}
+section h2{
+    margin-top: 200px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+margin-bottom: 20px;
+}
+
+section .item .items {
+width: 33.3%;
+
+}
+section .item .items img{
+    transition: all 2s ;
+    width: 80%;
+}
+
+section .item .items a {
+    margin-top: 20px;
+    color: #444444;
+    font-size: 15px;
+    font-weight: 400px;
+    margin-right: 50px;
+    text-align: center;/*هاي الخاصية ما رح تشتغل لا هي ولا المارجين على a 
+    لانو a هو عنصر انلاين عشان يشتغل بحلو ل بلوك */
+    display: block;
+    }  
+    section .item .items  span {
+        margin-top: 5px;
+        color: #f81f1f;
+font-size: 15px;
+margin-right: 50px;
+font-weight: 500;
+text-align: center;
+display: block;
+    } 
+    section h2{
+        margin-top: 100px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1;
+margin-bottom: 20px;
+    }
+    section .item2 .itemsp1 img{
+        width: 225%;
+
+        position: relative;
+        
+       
+        }
+        section .item2 .itemsp2 img{
+            width: 22%;
+            height: 126%;
+            position:absolute;
+            margin-top: -255px;
+            margin-left: 300px;
+            
+           
+            }
+            section .item2 .itemsp3 img{
+                width: 22%;
+                height: 59%;
+                position:absolute;
+                margin-top: -255px;
+                margin-left: 535px;
+                
+                
+               
+                }
+                section .item2 .itemsp4 img{
+                    width: 22%;
+                    height: 62%;
+                    position:absolute;
+                    margin-top: 1px;
+                    margin-left: 535px;
+                    
+                   
+                    }
+                    section  .c h2{
+                        margin-top: 100px;
+                        font-size: 40px;
+                        font-weight: 700;
+                        line-height: 1;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    }
+                    section .c p{
+                        text-align: center;
+                        line-height: 50px;
+                        color: #777;
+                        font-size: 17px;
+                        line-height: 35px;
+                        margin-bottom: 15px;
+                        font-weight: normal;
+                    }
+                    section .item .items3 img {
+                        position: relative;
+                        width: 80%;
+                    }
+                    section .item .items3 {
+                        width: 33.3%;
+                       
+                        }
+                        section .item .items3 i{
+                            color: #333333;
+                            font-size: 20px;
+                            cursor: pointer;
+                            text-align: right;
+                            display: block;
+                            position:absolute;
+                            margin-top: -200px;
+                            margin-left: 185px;
+                            visibility: hidden;
+                            transition: all 0.1s;
+                        }
+                        section .item .items3 .c{
+                            color: #fff;
+                    background: #f81f1f;
+                    padding: 20px ;
+                    position: absolute;
+                    margin-top: -60px;
+                    width: 18%;
+                    visibility: hidden;
+                    z-index: 1;
+                    display: block;
+                    cursor: pointer;
+                    transition: 0.1;
+                    
+                 
+                        }
+                        section .item .items3 a {
+                            margin-top: 20px;
+                            color: #444444;
+                            font-size: 15px;
+                            font-weight: 400px;
+                            margin-right: 50px;
+                            text-align: center!important;/*هاي الخاصية ما رح تشتغل لا هي ولا المارجين على a 
+                            لانو a هو عنصر انلاين عشان يشتغل بحلو ل بلوك */
+                            display: block;
+                            }  
+                            section .item .items3  span {
+                                margin-top: 5px;
+                                color: #444444;
+                                margin-right: 50px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    text-align: center;
+                    display: block;
+                            } 
+                            section .detailes .content{
+                                width: 30%;
+                            
+                            }
+                            section .content h1{
+                                font-size: 40px;
+                                font-weight: 700;
+                                line-height: 1.2;
+                                margin-bottom: 26px;
+                                color:black;
+                                }
+                                section .content p{
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    line-height: 30px;
+                                    margin-bottom: 60px;
+                                    color:#777 ;
+                                    padding-right: 70px;
+                                    }
+                                    section   .img-s img{
+                                        width: 100%;
+                                    padding: 20px;
+                                        animation:imgscale 0.9s infinite alternate ;
+                                                }
+                                                section .btn{
+                                                    color:#fff;
+                                                cursor:pointer;
+                                                
+                                                background-color:#f81f1f ;
+                                                padding: 10px 20px;
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                                border: 0px;
+                                                letter-spacing: 1px;
+                                                position: relative;
+                                                z-index: 1;/*بيجي تحت الديف الاحمر */
+                                                
+                                                }
+                                                section .item4 .items4{
+                                                    width: 40%;
+                                                    padding: 30px;
+                                                    
+                                                }
+                                                section .item4 .items4 i{
+                                                    color:#fff;
+                                                    font-size: 30px;
+                                                    margin-bottom: 20px;
+                                                                }
+                                                                section .item4 .items4 h6{
+                                                                    color: #fff;
+                                                        font-size: 15px;
+                                                        font-weight: 700;
+                                                        line-height: 1.2;
+                                                        margin-bottom: 12px;
+                                                                } 
+                                                    
+                                                                section .item4 .items4 p{
+                                                                    font-size: 12px;
+                                                        color: #d3d1d1;
+                                                        line-height: 30px;
+                                                        margin-bottom: 15px;
+                                                        font-weight: normal;
+                                                                }
+                       
+                                                            }
+
+@media(max-width:575px){
+   nav{
+    width: 150%;
+   }
+   header{
+    width: 150%;
+   }
+    nav .logo{
+        width: 100%;
+    }
+    nav .logo img{
+        width: 100%;
+    }
+    nav .nav-icon{
+        width: 100%;
+        text-align: center;/*to put icon in the right of page*/
+        
+        
+    }
+    nav .nav-icon i{
+margin-left: 7px;
+font-size: 20px;
+    }
+    nav .checkedlabel i{
+        font-size: 20px;
+    }
+    
+    header .img-header{
+        display:none;
+    }
+    header .content{
+        width: 100%;
+        
+    }
+    header .content h1{
+        margin-top: 10px;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 20px;
+        color:#0b1c39;
+        }
+        header .content p{
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 1;
+            margin-bottom: 20px;
+            color:#212025 ;
+            padding-right: 70px;
+            }
+            header .btn{
+              
+            padding: 10px 20px;
+            font-size: 10px;
+            font-weight: 500;
+            border: 0px;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;/*بيجي تحت الديف الاحمر */
+            
+            }
+            section .item{
+                margin-right: -250px;
+            }
+            section .item .items {
+                width: 33.3%;
+                
+                }
+                section .item .items img{
+                    transition: all 2s ;
+                    width: 90.87%;
+                    margin-right: 10px;
+                    
+                }
+                section .item2 .itemsp1 img{
+                    width: 200%;
+            
+                    position: relative;
+                    
+                   
+                    }
+                    section .item2 .itemsp2 img{
+                        width: 33%;
+                        height: 113%;
+                        position:absolute;
+                        margin-top: -230px;
+                        margin-left: 250px;
+                        
+                       
+                        }
+                        section .item2 .itemsp3 img{
+                            width: 33%;
+                            height: 50%;
+                            position:absolute;
+                            margin-top: -230px;
+                            margin-left: 460px;
+                            
+                            
+                           
+                            }
+                            section .item2 .itemsp4 img{
+                                width: 33%;
+                                height: 52%;
+                                position:absolute;
+                                margin-top: 10px;
+                                margin-left: 460px;
+                                
+                               
+                                }
+                                section  .c {
+                                    margin-right: -250px;
+                                }
+ 
+                                section .item .items3 img {
+                                    position: relative;
+                                    width: 100%;
+
+                                }
+                                section .item .items3 {
+                                    width: 40%;
+                                   margin-right: -200px;
+                                    }
+                                    section .item .items3 i{
+                                        color: #333333;
+                                        font-size: 20px;
+                                        cursor: pointer;
+                                        text-align: right;
+                                        display: block;
+                                        position:absolute;
+                                        margin-top: -200px;
+                                        margin-left: 150px;
+                                        visibility: hidden;
+                                        transition: all 0.1s;
+                                    }
+                                    section .item .items3 .c{
+                                        color: #fff;
+                                background: #f81f1f;
+                                padding: 20px ;
+                                position: absolute;
+                                margin-top: -60px;
+                                width: 25%;
+                                visibility: hidden;
+                                z-index: 1;
+                                display: block;
+                                cursor: pointer;
+                                transition: 0.1;
+                                
+                             
+                                    }
+                               
+                                                        section .btn{
+                                                            color:#fff;
+                                                        cursor:pointer;
+                                                        
+                                                        background-color:#f81f1f ;
+                                                        padding: 10px 20px;
+                                                        font-size: 16px;
+                                                        font-weight: 400;
+                                                        border: 0px;
+                                                        letter-spacing: 1px;
+                                                        position: relative;
+                                                        z-index: 1;/*بيجي تحت الديف الاحمر */
+                                                        
+                                                       }
+                                                        section .detailes .content{
+                                                            margin-right: -150px;
+                                                            width: 50%;
+                                                        
+                                                        }
+                                                        section .content h1{
+                                                            font-size: 40px;
+                                                            font-weight: 700;
+                                                            line-height: 1.2;
+                                                            margin-bottom: 26px;
+                                                            color:black;
+                                                            }
+                                                            section .content p{
+                                                                font-size: 15px;
+                                                                font-weight: 400;
+                                                                line-height: 30px;
+                                                                margin-bottom: 60px;
+                                                                color:#777 ;
+                                                                padding-right: 70px;
+                                                                }
+                                                                section   .img-s img{
+                                                                    width: 300%;
+                                                                    margin-right: -300px;
+                                                                padding: 20px;
+                                                                    animation:imgscale 0.9s infinite alternate ;
+                                                                            }
+                                                                            section .btn{
+                                                                                color:#fff;
+                                                                            cursor:pointer;
+                                                                            
+                                                                            background-color:#f81f1f ;
+                                                                            padding: 10px 20px;
+                                                                            font-size: 16px;
+                                                                            font-weight: 400;
+                                                                            border: 0px;
+                                                                            letter-spacing: 1px;
+                                                                            position: relative;
+                                                                            z-index: 1;/*بيجي تحت الديف الاحمر */
+                                                                            
+                                                                            }
+                                                                            section .item4 {
+                                                                                
+                                                                              
+                                                                                margin-left:50px;
+                                                                            }
+                                                                            section .item4 .items4{
+                                                                                width: 200% !important;
+                                                                                padding: 90px;
+                                                                                
+                                                                                
+                                                                            }
+                                                                            section .item4 .items4 i{
+                                                                                color:#fff;
+                                                                                font-size: 30px;
+                                                                                margin-bottom: 20px;
+                                                                                            }
+                                                                                            section .item4 .items4 h6{
+                                                                                                color: #fff;
+                                                                                    font-size: 15px;
+                                                                                    font-weight: 700;
+                                                                                    line-height: 1.2;
+                                                                                    margin-bottom: 12px;
+                                                                                            } 
+                                                                                
+                                                                                            section .item4 .items4 p{
+                                                                                                font-size: 12px;
+                                                                                    color: #d3d1d1;
+                                                                                    line-height: 30px;
+                                                                                    margin-bottom: 15px;
+                                                                                    font-weight: normal;
+                                                                                            }
+                                                                                            footer .footer-first .footer-item{
+                                                                                                margin: 40px;
+                                                                                                width: 70%;
+                                                                                                
+                                                                                            }
+                                                                                             
+            footer .footer-second   .footer_item   {
+                margin-right: -340px;
+                color: black;
+                transition:all 1.5s;
+                display: inline-block;
+            
+            }
+                                                                                             
+           
+          
+
+
+}
+
+@media(min-width:576px) and ( max-width:992px){
+    header .content h1{
+        
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 0.9;
+        margin-bottom: 15px;
+    
+
+}
+header .content p{
+    font-size: 20px;
+    line-height: 0.8;
+    font-weight: 300;
+    margin-bottom: 15px;
+    
+}
+header .btn{
+              
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: 500;
+    border: 0px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;/*بيجي تحت الديف الاحمر */
+    
+    }
+
+header  .img-header{
+    width: 100%;/*حتى اخلي صورة الساعة داخل الاب لانها بدون هيك بتضل الساعة برات الهيدر*/
+}
+nav{
+    width: 148%;
+   }
+   header{
+    width: 150%;
+   }
+   section .item{
+    margin-right: -250px;
+}
+section .item .items {
+    width: 33.3%;
+    
+    }
+    section .item .items img{
+        transition: all 2s ;
+        width: 90.87%;
+        margin-right: 10px;
+        
+    }
+    section .item2 .itemsp1 img{
+        width: 200%;
+
+        position: relative;
+        
+       
+        }
+        section .item2 .itemsp2 img{
+            width: 33%;
+            height: 112%;
+            position:absolute;
+            margin-top: -227px;
+            margin-left: 245px;
+            
+           
+            }
+            section .item2 .itemsp3 img{
+                width: 33%;
+                height: 52%;
+                position:absolute;
+                margin-top: -227px;
+                margin-left: 455px;
+                
+                
+               
+                }
+                section .item2 .itemsp4 img{
+                    width: 33%;
+                    height: 52%;
+                    position:absolute;
+                    margin-top: 15px;
+                    margin-left: 455px;
+                    
+                   
+                    }
+                    section .c{
+                        margin-right: -250px;
+                    }
+                    section .item .items3 img {
+                        position: relative;
+                        width: 100%;
+
+                    }
+                    section .item .items3 {
+                        width: 40%;
+                       margin-right: -200px;
+                        }
+                        section .item .items3 i{
+                            color: #333333;
+                            font-size: 20px;
+                            cursor: pointer;
+                            text-align: right;
+                            display: block;
+                            position:absolute;
+                            margin-top: -200px;
+                            margin-left: 150px;
+                            visibility: hidden;
+                            transition: all 0.1s;
+                        }
+                        section .item .items3 .c{
+                            color: #fff;
+                    background: #f81f1f;
+                    padding: 20px ;
+                    position: absolute;
+                    margin-top: -60px;
+                    width: 25%;
+                    visibility: hidden;
+                    z-index: 1;
+                    display: block;
+                    cursor: pointer;
+                    transition: 0.1;
+                    
+                 
+                        }
+                        section .detailes .content{
+                            margin-right: -150px;
+                            width: 50%;
+                        
+                        }
+                        section .content h1{
+                            font-size: 40px;
+                            font-weight: 700;
+                            line-height: 1.2;
+                            margin-bottom: 26px;
+                            color:black;
+                            }
+                            section .content p{
+                                font-size: 15px;
+                                font-weight: 400;
+                                line-height: 30px;
+                                margin-bottom: 60px;
+                                color:#777 ;
+                                padding-right: 70px;
+                                }
+                                section   .img-s img{
+                                    width: 300%;
+                                    margin-right: -300px;
+                                padding: 20px;
+                                    animation:imgscale 0.9s infinite alternate ;
+                                            }
+                                            section .btn{
+                                                color:#fff;
+                                            cursor:pointer;
+                                            
+                                            background-color:#f81f1f ;
+                                            padding: 10px 20px;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            border: 0px;
+                                            letter-spacing: 1px;
+                                            position: relative;
+                                            z-index: 1;/*بيجي تحت الديف الاحمر */
+                                            
+                                            }
+                                            section .item4 {
+                                                                                
+                                                  width: 100%;                            
+                                                margin-left:100px;
+                                            }
+                                            section .item4 .items4{
+                                               
+                                                padding: 50px;
+                                                
+                                                
+                                            }
+                                            
+                                                            footer .footer-first .footer-item{
+                                                                margin: 40px;
+                                                                width: 70%;
+                                                                
+                                                            }
+                                                            footer .footer-second   .footer_item   {
+                                                                margin-right: -340px;
+                                                                color: black;
+                                                                transition:all 1.5s;
+                                                                display: inline-block;
+                                                            
+                                                            }
+                                                        }

@@ -1,0 +1,627 @@
+/*public css in my project ,in all project ,all pages*/
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@500&family=Oswald&family=Roboto:ital,wght@0,500;1,900&display=swap');
+*,:before,::after{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 3000px;
+    width: 100%;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    margin: auto;
+    width: 80%;
+    
+}
+ .btn{
+    color:#fff;
+cursor:pointer;
+
+background-color:#f81f1f ;
+padding: 16px 30px;
+font-size: 16px;
+font-weight: 600;
+border: 0px;
+letter-spacing: 1px;
+position: relative;
+z-index: 1;/*بيجي تحت الديف الاحمر */
+
+}
+.btn::before{
+    top: 0px;
+    left: 0px;
+    content: '';
+    position: absolute;/*يتحرك بالنسبة للديف السكني*/
+    z-index: -1;/*يجي الاحمر فوق السكني*/
+    width: 0px;
+    height: 100%;
+background-color: #4a4a4b
+
+}
+.btn:hover::before{
+    width: 100%;/*لما اعمل هوفر على البني يطلع السكني */
+    transition: all 0.4s;
+}
+
+/*start item style navbar*/
+nav{
+    
+background-color:#fff;
+padding: 3% 2%;
+
+position: sticky;/*حتى اخلي النفبار يضلثابت عنجي لما انزل واطلع*/
+top:0;
+z-index: 9999;/*حتى اخلي النافبار هوي فوق المحتوى وليس تحته*/
+
+
+}
+nav .logo{
+    width: 20%;
+}
+ nav .nav-list {
+    width: 60%;
+   
+    
+}
+nav .nav-icon{
+    width: 20%;
+    text-align: right;/*to put icon in the right of page*/
+    
+    
+}
+nav .nav-list .list{
+    display: flex;/*to make list beside each other*/
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-list .list .list-item{
+    margin-right: 30px;
+    position: relative;
+}
+nav .nav-list .list .list-item .nav-link{
+    color: #141781;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 2s;
+}
+nav .nav-list .list .list-item:hover .nav-link{
+    color:#f81f1f;/*when make hover in list-item the nav-link color is red*/
+}
+nav .nav-list .list .list-item:nth-child(4):after{
+    content:" HOT";/*to put hot after the four item in list,to remove it make position of it absolute ,hot move relativa from parent(item-list)*/
+    position: absolute;
+    top: -28px;
+    font-size: 12px;
+    background-color:#f81f1f;
+    border-radius: 20px;
+    color: #fff;
+    left:25px;
+    padding: 6px;
+    filter: drop-shadow(2px 2px 8px #ccc);
+    
+}
+nav .nav-list .list .list-item .dropdown{
+    position: absolute;
+    top:80px;
+    background-color: #ccc;
+    padding:20px 15px ;
+    width: 160px;
+    border-top: 2px solid #f81f1f ;
+    border-radius: 10px 10px 0 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+nav .nav-list .list .list-item .dropdown .dropdown-list{
+    margin-bottom: 8px;
+}
+nav .nav-list .list .list-item .dropdown:before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    background-color: #f81f1f;
+    clip-path: polygon(50% 0%,0% 100%,100% 100%);/*to put triangle use clip maker */
+    top:-11px;
+    
+}
+nav .nav-list .list .list-item:hover .dropdown{
+    opacity: 1;
+    visibility: visible;/*when make hover in list-item the dropdown visible*/
+    top:60px;
+}
+.checkedlabel,#check{
+    display: none;
+    margin-left: 120px;
+}
+
+/*end navbar style*/
+/*start header style*/
+header .content{
+    width: 70%;
+    animation: contentleft 4s;
+}
+header .content h1{
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 26px;
+    color:#0b1c39;
+    }
+    header .content p{
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 60px;
+        color:#212025 ;
+        padding-right: 70px;
+        }
+       
+        header{
+            background-color:#C0C0C0;
+            
+        }
+        header .img-header{
+width: 30%;
+height: 100%;
+animation:imgscale 0.9s infinite alternate ;
+        }
+
+       header .btn{
+            color:#fff;
+        cursor:pointer;
+        
+        background-color:#4a4a4b ;
+        padding: 16px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        border: 0px;
+        letter-spacing: 1px;
+        position: relative;
+        z-index: 1;/*بيجي تحت الديف الاحمر */
+        
+        }
+       header .btn::before{
+            top: 0px;
+            left: 0px;
+            content: '';
+            position: absolute;/*يتحرك بالنسبة للديف السكني*/
+            z-index: -1;/*يجي الاحمر فوق السكني*/
+            width: 0px;
+            height: 100%;
+        background-color:#f81f1f;
+        
+        }
+       header .btn:hover::before{
+            width: 100%;/*لما اعمل هوفر على البني يطلع السكني */
+            transition: all 0.4s;
+        }
+        @keyframes contentleft{
+            0%{
+                transform: translateX(-100%);
+           /*معناها انو اول شي بكون صفر يعني من جهة اليسار وبعدها بتحرك بالنسبة لمحور السينات افقي وسالب مية يعني يتحرك لليمين يعني من اليسار لليمين بحط سالبل*/
+        
+            }
+            100%{
+                transform: translateX(0%);/*ولما يوصل مية خلص خليك صفر مكانك */
+            }}
+            @keyframes imgscale{
+                0%{
+                    transform: scale(0.99);
+               /*معناها انو اول شي بكون صفر يعني من جهة اليسار وبعدها بتحرك بالنسبة لمحور السينات افقي وسالب مية يعني يتحرك لليمين يعني من اليسار لليمين بحط سالبل*/
+            
+                }
+                100%{
+                    transform: scale(1);/*ولما يوصل مية خلص خليك صفر مكانك */
+                }
+            }
+            /*start section style*/
+            section h2{
+                margin-top: 200px;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 1;
+margin-bottom: 20px;
+            }
+            .row .item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+            section .item .items {
+            width: 30%;
+           
+            }
+            section .item .items img{
+                transition: all 2s ;
+            }
+           
+            section .item .items a {
+                margin-top: 20px;
+                color: #444444;
+                font-size: 20px;
+                font-weight: 400px;
+                text-align: center!important;/*هاي الخاصية ما رح تشتغل لا هي ولا المارجين على a 
+                لانو a هو عنصر انلاين عشان يشتغل بحلو ل بلوك */
+                display: block;
+                }  
+                section .item .items  span {
+                    margin-top: 5px;
+                    color: #f81f1f;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+                }  
+                section  .item .items:hover img {
+                    transform: scale(1.1);
+                border-style: none;
+                   
+                }
+                
+                   
+                
+
+            /*end section style*/
+            /*start pictures style*/
+            .row .item2{
+                margin-top: 200px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+
+            }
+            section .item2 .itemsp1 img{
+                width: 290%;
+    
+                position: relative;
+                
+               
+                }
+           
+                section .item2 .itemsp2 img{
+                    width: 25%;
+                    height: 107%;
+                    position:absolute;
+                    margin-top: -328px;
+                    margin-left: 450px;
+                    
+                   
+                    }
+                    section .item2 .itemsp3 img{
+                        width: 25%;
+                        height: 52%;
+                        position:absolute;
+                        margin-top: -328px;
+                        margin-left: 810px;
+                        
+                       
+                        }
+                        section .item2 .itemsp4 img{
+                            width: 25%;
+                            height: 51%;
+                            position:absolute;
+                            margin-top: 13px;
+                            margin-left: 810px;
+                            
+                           
+                            }
+                            section  .item2 .itemsp1:hover img {
+                                transform: scale(0.9);
+                            border-style: none;
+                               
+                            }
+                            section  .item2 .itemsp2:hover img {
+                                transform: scale(0.9);
+                            border-style: none;
+                               
+                            }
+                            section  .item2 .itemsp3:hover img {
+                                transform: scale(0.9);
+                            border-style: none;
+                               
+                            }
+                            section  .item2 .itemsp4:hover img {
+                                transform: scale(0.9);
+                            border-style: none;
+                               
+                            }
+                            section .item2  img{
+                                transition: all 2s ;
+                            }
+
+            /*end picture style*/
+            /*start populer item style*/
+section  .c h2{
+    margin-top: 200px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+margin-bottom: 20px;
+text-align: center;
+}
+
+section .c p{
+    text-align: center;
+    line-height: 50px;
+    color: #777;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+section .item .items3 i{
+    color: #333333;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right;
+    display: block;
+    position:absolute;
+    margin-top: -355px;
+    margin-left: 300px;
+    visibility: hidden;
+    transition: all 0.1s;
+}
+section .item .items3:hover i{
+visibility:visible;
+}
+section .item .items3 img {
+    position: relative;
+}
+section .item .items3 {
+    width: 30%;
+   
+    }
+   
+   
+    section .item .items3 a {
+        margin-top: 20px;
+        color: #444444;
+        font-size: 20px;
+        font-weight: 400px;
+        text-align: center!important;/*هاي الخاصية ما رح تشتغل لا هي ولا المارجين على a 
+        لانو a هو عنصر انلاين عشان يشتغل بحلو ل بلوك */
+        display: block;
+        }  
+        section .item .items3  span {
+            margin-top: 5px;
+            color: #444444;
+font-size: 18px;
+font-weight: 500;
+text-align: center;
+display: block;
+        } 
+        section .item .items3 img {
+            position: relative;
+        }
+        section .item .items3 .c{
+            color: #fff;
+    background: #f81f1f;
+    padding: 20px ;
+    position: absolute;
+    margin-top: -60px;
+    width: 24%;
+    visibility: hidden;
+    z-index: 1;
+    display: block;
+    cursor: pointer;
+    transition: 0.1;
+    
+ 
+        }
+        section .item .items3 .c::before{
+        top: 50px;
+        left: 0px;
+        padding: 2px;
+        content: '';
+        position: absolute;/*يتحرك بالنسبة للديف السكني*/
+        z-index: -1;/*يجي الاحمر فوق السكني*/
+    margin-bottom: 50px;
+        width: 97%;
+
+        visibility:visible;
+    background-color: #f81f1f}
+        section .item .items3:hover .c{
+            visibility: visible;
+        }
+
+
+            /*end populer item style*/
+            /*start detailes watch style*/
+            section .detailes{
+                margin-top: 200px;
+            }
+            section .detailes .content{
+                width: 50%;
+            
+            }
+            section .content h1{
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: 26px;
+                color:black;
+                }
+                section .content p{
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    margin-bottom: 60px;
+                    color:#777 ;
+                    padding-right: 70px;
+                    }
+                   
+                    
+                    section   .img-s img{
+            width: 110%;
+        padding: 20px;
+            animation:imgscale 0.9s infinite alternate ;
+                    }
+                   
+            section .btn{
+                        color:#fff;
+                    cursor:pointer;
+                    
+                    background-color:#f81f1f ;
+                    padding: 16px 30px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border: 0px;
+                    letter-spacing: 1px;
+                    position: relative;
+                    z-index: 1;/*بيجي تحت الديف الاحمر */
+                    
+                    }
+                   section .btn::before{
+                        top: 0px;
+                        left: 0px;
+                        content: '';
+                        position: absolute;/*يتحرك بالنسبة للديف السكني*/
+                        z-index: -1;/*يجي الاحمر فوق السكني*/
+                        width: 0px;
+                        height: 100%;
+                    background-color:#4a4a4b;
+                    
+                    }
+                    .btn:hover::before{
+                        width: 100%;/*لما اعمل هوفر على البني يطلع السكني */
+                        transition: all 0.4s;
+                    }
+            /*end detailes watch style*/
+            /*start icons item style*/
+.row .item4{
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#f81f1f;
+        margin-top: 200px;
+
+    
+}
+            section .item4 .items4{
+                width: 30%;
+                padding: 30px;
+                
+            }
+            section .item4 .items4 i{
+color:#fff;
+font-size: 35px;
+margin-bottom: 20px;
+            }
+            section .item4 .items4 h6{
+                color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+            } 
+
+            section .item4 .items4 p{
+                font-size: 16px;
+    color: #d3d1d1;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+            }
+            
+            /*end icons item style*/
+            /*start footer item style*/
+            footer{
+                
+                
+                padding:140px 0px;
+            
+            background-color: white
+            
+            }
+            footer .footer-first .footer-item{
+                margin: 20px;
+                width: 25%;
+            }
+            
+            footer .footer-first .row{
+            align-items: flex-start;
+            }
+
+            footer .footer-first .footer-item p{
+                margin:10px 0px;
+                color: #777;
+                line-height: 20px;
+                
+                
+            
+            }
+            
+            footer .footer-second   .footer_item .icon-social  {
+                margin-left: 10px;
+                color: black;
+                transition:all 1.5s;
+                display: inline-block;
+            
+            }
+            footer .footer-second .footer_item .icon-social:hover{
+                transform:rotatey(180deg);
+                color:#f81f1f;
+            }
+            footer .footer-first .footer-item h3{
+                margin-bottom: 20px;
+                
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 100px;
+                display: block;
+            }
+            footer .footer-first .footer-item ul li {
+                margin-bottom: 10px;
+                
+            
+            
+            }
+            footer .footer-first .footer-item ul li a{
+            color:#777;
+            transition: .4s;
+            font-weight: 100px;
+            font-size: 18px;
+             margin-bottom: 20px;
+             display: block;
+            
+            }
+            footer .footer-first .footer-item ul li:hover a{
+            margin-left: 10px;
+            color:#f81f1f;
+            }
+             
+            footer .footer-first{
+                border-bottom:1px solid #ffffff99;
+                padding-bottom: 20px;
+            
+            }
+            footer .footer-second{
+                margin-top: 10px;
+            }
+            footer .footer-second p{
+                color: #777;
+            }
+            footer .footer-second p i{
+                color:#f81f1f;
+            }
+            footer .footer-second p a{
+                color:#f81f1f;
+            }
+            /*end footer item style*/
